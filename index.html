@@ -27,7 +27,7 @@
                         <form class="form-inline" id="search-form">
                             <label id="form-label" for="location"></label>
                             <input name="location" type="search" class="form-control mb-3" id="location" placeholder="Enter city name...">
-                            <button type="submit" class="btn btn-primary">search</button>
+                            <button type="submit" class="btn btn-primary" id="searchBtn">search</button>
                         </form>
     
                         <ul class="list-group" id="search-history">
@@ -45,7 +45,6 @@
                                 <h6 class="card-subtitle text-muted" id="main-city-temp">Temperature: </h6>
                                 <h6 class="card-subtitle mt-3 text-muted" id="main-city-humid">Humidity: </h6>
                                 <h6 class="card-subtitle mt-3 text-muted" id="main-city-wind">Wind Speed: </h6>
-                                <h6 class="card-subtitle mt-3 text-muted" id="main-city-uv">UV Index: <span id="uv-box" class="px-2 py-1 mb-1 text-light rounded font-weight-normal"></span></h6>
                             </div>  
                         </div>
                         
@@ -54,6 +53,22 @@
                             <div class="row justify-content-between" id="five-day">
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal" aria-labelledby="modalLabel"  aria-hidden="true" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ohh No...</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The location you chose came up invalid. Please enter a valid location</p>
+                        </div>
+                     <div class="modal-footer">
+                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
