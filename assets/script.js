@@ -71,7 +71,7 @@ function callForecast(search) {
 
     var key = 'd49b1f6a58f01678d1f0b70e468590c6';
     var queryURL =
-      "http://api.openweathermap.org/data/2.5/forecast?units=imperial&q=" + search + "&appid=" + key;
+      "https://api.openweathermap.org/data/2.5/forecast?units=imperial&q=" + search + "&appid=" + key;
 
       fetch(queryURL)
         .then(function(response) {
@@ -93,7 +93,7 @@ function callForecast(search) {
 function callWeather(search) {
 
     var key = 'd49b1f6a58f01678d1f0b70e468590c6';
-    var weatherURL = "http://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + search + "&appid=" + key;
+    var weatherURL = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + search + "&appid=" + key;
 
     fetch(weatherURL)
     .then(function(response) {
